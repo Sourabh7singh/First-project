@@ -1,0 +1,44 @@
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation section */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+}
+/* home section */
+#home{
+    padding: 3px 10px;
+}
+/* services section */
+#services{
+    flex-direction: column;
+}
+
+#services .box{
+
+}
+
+/* client section */
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    width: 60px;
+    padding: 2px 5px;
+    margin: 0;
+
+}
+
+
+/* contact us section */
+
+/* footer */
+
+/* utility class */
+.h-primary{
+    font-size: 23px;
+}
