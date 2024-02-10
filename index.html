@@ -6,19 +6,38 @@
     <title>Gyaan Fitness Gym</title>
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="Saurabh.ico" type="image/x-icon">
-    <link rel="stylesheet" media="screen and (max-width: 1150px)" href="index_phone.css">
 </head>
 <body>
     <nav id="navbar">
         <div id="logo">
             <img src="img/logo.png" alt="Gyaan Fitness Gym">
         </div>
-        <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item"><a href="#">Clients</a></li>
-            <li class="item"><a href="#">contact us</a></li>
-        </ul>
+        <div class="navigation">
+            <ul>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">Clients</a></li>
+                <li class="item"><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" id = "Menutbn" onclick="ToggleMenu()" class="icon icon-tabler icon-tabler-menu" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 8l16 0" />
+            <path d="M4 16l16 0" />
+        </svg>
+        <div id="sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Closebtn" onclick="ToggleMenu()" class="icon icon-tabler icon-tabler-square-x" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+                <path d="M9 9l6 6m0 -6l-6 6" />
+            </svg>
+            <ul>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">Clients</a></li>
+                <li class="item"><a href="#">contact us</a></li>
+            </ul>
+        </div>
     </nav>
     <section id="home">
         <h1 class="h-primary">Welcome to Gyaan Fitness Gym</h1>
@@ -92,5 +111,6 @@
             copyright &copy; www.gyaanfitnessgym.com All rights reserved
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

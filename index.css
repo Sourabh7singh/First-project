@@ -9,7 +9,6 @@
 
 :root{
     --navbar-height:60px;
-
 }
 
 /* Navigation bar */
@@ -19,8 +18,37 @@
     align-items: center;
     position: sticky;
     top: 0;
+    justify-content: space-between;
 }
 
+#sidebar{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: antiquewhite;
+}
+#sidebar ul{
+    display: flex;
+    margin: 0.5rem;
+    flex-direction: column;
+}
+.icon-tabler-square-x{
+    float: right;
+    display: none;
+    background-color: white;
+    border-radius: 5px;
+}
+.icon-tabler-menu{
+    display: none;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 5px;
+}
+#sidebar ul li{
+    display: block;
+    margin: auto;
+}
 #navbar::before{
     content: "";
     background-color: black;
@@ -47,30 +75,29 @@
     display: flex;
 }
 
-#navbar ul li{
+#navbar ul li,#sidebar ul li{
     list-style: none;
     font-size: 1.3rem;
 }
 
-#navbar ul li a{
+#navbar ul li a,#sidebar ul li a{
     color: rgb(255, 188, 3);
     display: block;
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
 }
-#navbar ul li a:hover{
+#navbar ul li a:hover,#sidebarul li a:hover{
     color: black;
     background-color: white;
-    
 }
 
 /* Home section */
 #home{
     display: flex;
     flex-direction: column;
-    height: 627px;
-    padding: 3px 100px;
+    height: calc(100vh - 60px);
+    padding: 3px 50px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -85,7 +112,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: -1;
     opacity: 0.7;
@@ -94,7 +121,6 @@
 #home h1{
     color: rgb(0, 0, 0);
     font-family: 'Borel', cursive;
-
 }
 
 #home P{
@@ -108,10 +134,11 @@
     display: flex;
 }
 #services .box{
-    border: 2px solid red;
-    padding: 5px ;
-    margin: 3px 6px;
-    border-radius: 30px;
+    background-color: beige;
+    padding: 10px;
+    margin: 10px 6px;
+    border-radius: 50px;
+    box-shadow: inset 10px 10px 100px whitesmoke;
 }
 #services .box img{
     border-radius: 30px;
@@ -142,6 +169,8 @@
     align-items:center;
 }
 #clients img{
+    display: block;
+    margin: auto;
     height: 80px;
 }
 .client-item{
@@ -212,4 +241,60 @@ footer{
 }
 .center{
     text-align: center;
+}
+
+@media only screen and (max-width: 1150px) {
+    html{
+        scroll-behavior: smooth;
+    }
+    /* Navigation section */
+    #navbar ul li a{
+        font-size: 1rem;
+        padding: 0px 7px;
+    }
+    #sidebar{
+        display: none;
+    }
+    #sidebar,#Closebtn,#Menubtn{
+        transition: all 0.2s ease;
+    }
+    .navigation{
+        display: none;
+    }
+    /* home section */
+    #home{
+        padding: 3px 10px;
+    }
+    /* services section */
+    #services{
+        flex-direction: column;
+    }
+    .icon-tabler-menu{
+        display: block;
+    }
+    /* client section */
+    #clients{
+        flex-wrap: wrap;
+    }
+    .client-item{
+        padding: 10px;
+    }
+    #clients img{
+        width: 60px;
+        padding: 2px 5px;
+        margin: 0;
+    }
+    
+    
+    /* contact us section */
+    #contact-box form{
+        width: 80%;
+    
+    }
+    /* footer */
+    
+    /* utility class */
+    .h-primary{
+        font-size: 23px;
+    }
 }
