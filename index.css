@@ -27,6 +27,7 @@
     top: 0;
     width: 100%;
     background-color: antiquewhite;
+    z-index: 5;
 }
 #sidebar ul{
     display: flex;
