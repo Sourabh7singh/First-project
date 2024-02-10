@@ -19,6 +19,7 @@
     position: sticky;
     top: 0;
     justify-content: space-between;
+    z-index: 5;
 }
 
 #sidebar{
@@ -27,7 +28,7 @@
     top: 0;
     width: 100%;
     background-color: antiquewhite;
-    z-index: 5;
+    /* z-index: 5; */
 }
 #sidebar ul{
     display: flex;
