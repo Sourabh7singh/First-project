@@ -26,16 +26,21 @@ html{
 #clients{
     flex-wrap: wrap;
 }
+.client-item{
+    padding: 10px;
+}
 #clients img{
     width: 60px;
     padding: 2px 5px;
     margin: 0;
-
 }
 
 
 /* contact us section */
+#contact-box form{
+    width: 80%;
 
+}
 /* footer */
 
 /* utility class */
